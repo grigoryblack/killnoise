@@ -1,0 +1,112 @@
+@import "src/assets/styles/_styles";
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $primary;
+  position: relative;
+  height: auto;
+
+  .decoration{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40.042svw;
+  }
+  .header-wrapper__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    width: 100%;
+    margin-top: 30px;
+
+    .header__container-info-item {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 50px;
+
+      h1{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 10.417svw;
+        font-family: 'BebasNeue', sans-serif;
+      }
+
+      h3{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 2.865svw;
+        color: $background-color;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 1430px) {
+  .header-wrapper {
+    .header-wrapper__container{
+      transition: 0.3s all;
+      padding: 0 30px;
+    }
+
+    .decoration{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 36.042svw;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-wrapper {
+    .header-wrapper__container{
+      .header__container-info-item{
+        h1{
+          font-size: 15.417svw;
+        }
+
+        h3{
+          font-size: 3.417svw;
+        }
+      }
+    }
+
+    .decoration{
+      height: 36.042svw;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header-wrapper {
+    height: 100vh;
+    .header-wrapper__container{
+      .header__container-info-item{
+        h1{
+          font-size: 25.417svw;
+        }
+
+        h3{
+          text-align: center;
+          font-weight: 600;
+          margin-top: 15svw;
+          font-size: 10.417svw;
+        }
+      }
+    }
+
+    .decoration{
+      height: 60.042svw;
+    }
+  }
+}

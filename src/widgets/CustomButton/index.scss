@@ -1,0 +1,52 @@
+@import "src/assets/styles/_styles";
+
+.button-container {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: $background-color;
+
+  img{
+    width: 23.073svw;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.042svw;
+    top: 35%;
+    left: 5%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &:hover{
+    color: $primary
+  }
+}
+
+@media (max-width: 1000px) {
+  .button-container{
+    img{
+      width: 35.073svw;
+    }
+
+    p{
+      font-size: 1.5svw;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .button-container{
+    margin-top: 25svw;
+    img{
+      width: 90.073svw;
+    }
+
+    p{
+      font-size: 4.5svw;
+    }
+  }
+}
