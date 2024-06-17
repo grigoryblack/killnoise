@@ -9,11 +9,22 @@
   height: auto;
 
   .decoration{
+    /*opacity: 0;*/
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 40.042svw;
+    height: 25.042svw;
   }
+
+  /*.worker{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 26.042svw;
+    border-radius: 60% 40% 0% 100% / 100% 0% 100% 0%  ;
+    border: 10px solid white;
+  }*/
+
   .header-wrapper__container {
     display: flex;
     flex-direction: row;

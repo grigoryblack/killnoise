@@ -18,7 +18,7 @@ declare module "*.jpeg" {
     export default content;
 }
 
-declare module "*.gif" {
+declare module "*.webp" {
     const content: string;
     export default content;
 }
