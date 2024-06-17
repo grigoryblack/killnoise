@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   cursor: default;
+  z-index: 10;
 
   .about-wrapper__container {
     margin-top: 2svw;
@@ -127,7 +128,7 @@
     height: 100vh;
     .about-wrapper__container{
       h1{
-        font-size: 10svw;
+        font-size: 11svw;
       }
 
       .about__container-item{
