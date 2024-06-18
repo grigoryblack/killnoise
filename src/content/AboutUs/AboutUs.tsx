@@ -19,15 +19,17 @@ const AboutUs = () => {
                         </div>
                         <div className="about-title">
                             <img src={AboutDecoration} alt="AboutDecoration"/>
-                            <p>Архитектурная аккустика</p>
+                            <p>Архитектурная акустика</p>
                         </div>
                     </div>
                     <div className="about-item__block-info">
                         <ul>
-                            <li><img src={Point} alt="Point"/> Монтаж любых звукоизолирующих конструкций.</li>
-                            <li><img src={Point} alt="Point"/> Разработка уникальных конструктивных решений.</li>
-                            <li><img src={Point} alt="Point"/> Выездные консультации для выбора решения.</li>
-                            <li><img src={Point} alt="Point"/> Поиск источникво шума и вибрации.</li>
+                            <li><img src={Point} alt="Point"/> Монтаж любых звукоизолирующих конструкций</li>
+                            <li><img src={Point} alt="Point"/> Разработка уникальных конструктивных решений</li>
+                            <li><img src={Point} alt="Point"/> Помощь в выборе решений</li>
+                            <li><img src={Point} alt="Point"/> Выездные консультации</li>
+                            <li><img src={Point} alt="Point"/> Поиск источников шума и вибрации</li>
+                            <li><img src={Point} alt="Point"/> Акустические измерения, измерения шума и звукоизоляции</li>
                         </ul>
                     </div>
                 </div>
