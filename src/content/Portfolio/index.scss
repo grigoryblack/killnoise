@@ -1,0 +1,103 @@
+@import "src/assets/styles/_styles";
+
+.portfolio-wrapper {
+  width: 100%;
+  background-color: $background-color;
+
+  .portfolio-wrapper__container {
+    margin: 3svw auto;
+    width: 100%;
+    max-width: 1450px;
+    row-gap: 2svw;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 3svw;
+      color: $secondary-color;
+    }
+
+    .carousel-container {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+      column-gap: 1svw;
+      row-gap: 2svw;
+      width: 100%;
+
+      .carousel-container__inner{
+        display: flex;
+        flex-direction: column;
+        background-color: $primary;
+        padding: 10px;
+        border-radius: 15px;
+
+        p{
+          background-color: $background-color;
+          border-radius: 10px;
+          padding: 10px;
+          margin-bottom: 1svw;
+          font-size: 0.8svw;
+          font-weight: 600;
+        }
+
+        .diver{
+          background-color: $background-color;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          height: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1430px) {
+  .portfolio-wrapper {
+    .portfolio-wrapper__container {
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolio-wrapper {
+    .portfolio-wrapper__container {
+      padding: 0 30px;
+
+      h1 {
+        font-size: 5svw;
+      }
+
+      .carousel-container {
+        grid-template-columns: repeat(1, 100%);
+
+        .carousel-container__inner{
+          p{
+            font-size: 2.5svw;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-wrapper {
+    .portfolio-wrapper__container {
+      padding: 0 30px;
+
+      h1 {
+        font-size: 9svw;
+      }
+
+      .carousel-container {
+        .carousel-container__inner{
+          p{
+            font-size: 2.7svw;
+          }
+        }
+      }
+    }
+  }
+}

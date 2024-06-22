@@ -4,15 +4,14 @@ import './index.scss';
 
 interface ButtonProps {
     text: string;
-    onClick: () => void;
 }
 
-const CustomButton: React.FC<ButtonProps> = ({ text, onClick }) => {
+const CustomButton: React.FC<ButtonProps> = ({ text }) => {
     return (
-        <div className="button-container" onClick={onClick}>
+        <a href="#contact" className="button-container">
             <img src={ImgButton} alt="button"/>
             <p>{text}</p>
-        </div>
+        </a>
     );
 };
 

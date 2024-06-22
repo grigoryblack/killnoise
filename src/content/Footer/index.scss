@@ -1,0 +1,28 @@
+@import "src/assets/styles/_styles";
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-color;
+  padding: 3svw 0;
+
+  p {
+    font-size: 1svw;
+    color: $background-color;
+    opacity: 0.3;
+    font-weight: 300;
+    cursor: default;
+
+    a {
+      text-decoration: none;
+
+      strong {
+        color: $background-color;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
