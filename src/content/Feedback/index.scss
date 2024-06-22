@@ -106,7 +106,8 @@
             }
 
             .form-button {
-              background-color: $primary;
+              background-color: $secondary-color;
+              color: $background-color;
               margin-left: auto;
               margin-right: 0;
               display: flex;
@@ -119,7 +120,7 @@
               font-family: 'Montserrat', sans-serif;
 
               &:hover {
-                background-color: $secondary-color;
+                background-color: #454545;
                 color: $background-color;
               }
             }
