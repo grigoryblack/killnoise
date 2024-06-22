@@ -64,17 +64,17 @@
           .form-button {
             background-color: $primary;
             color: $background-color;
+            margin-top: 2svw;
             margin-left: auto;
-            margin-right: 0;
+            margin-right: auto;
             display: flex;
-            font-size: 1svw;
+            font-size: 1.5svw;
             border: none;
             padding: 0.5svw 1svw;
             border-radius: 20px;
             cursor: pointer;
             font-weight: 600;
             font-family: 'Montserrat', sans-serif;
-            margin-top: 2svw;
 
             &:hover {
               background-color: $secondary-color;
@@ -136,16 +136,7 @@
             .form-button {
               background-color: $primary;
               color: $background-color;
-              margin-left: auto;
-              margin-right: 0;
-              display: flex;
-              font-size: 1.5svw;
-              border: none;
-              padding: 1svw 1.5svw;
-              border-radius: 20px;
-              cursor: pointer;
-              font-weight: 600;
-              font-family: 'Montserrat', sans-serif;
+              font-size: 2.5svw;
 
               &:hover {
                 background-color: $secondary-color;
@@ -199,8 +190,7 @@
             }
 
             .form-button {
-              font-size: 1.5svw;
-              padding: 1svw 1.5svw;
+              font-size: 3.5svw;
 
               &:hover {
                 background-color: $secondary-color;
@@ -253,7 +243,7 @@
             }
 
             .form-button {
-              font-size: 4svw;
+              font-size: 6svw;
               padding: 2svw 2.5svw;
               border-radius: 20px;
 
