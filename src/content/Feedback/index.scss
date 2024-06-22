@@ -36,17 +36,19 @@
 
         .form-container {
           width: 100%;
-          background-color: $background-color;
+          background-color: $primary;
           padding: 2svw;
           border-radius: 20px;
 
           p {
             font-size: 1.2svw;
             margin-bottom: 2svw;
+            font-weight: 500;
           }
 
           .form-button {
-            background-color: $primary;
+            background-color: $secondary-color;
+            color: $background-color;
             margin-left: auto;
             margin-right: 0;
             display: flex;
@@ -60,7 +62,7 @@
             margin-top: 2svw;
 
             &:hover {
-              background-color: $secondary-color;
+              background-color: #454545;
               color: $background-color;
             }
           }

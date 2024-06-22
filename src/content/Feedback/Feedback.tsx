@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const Feedback = () => {
     const [form] = Form.useForm();
-    const [loading, setLoading] = useState(false); // Состояние для загрузчика
+    const [loading, setLoading] = useState(false);
 
     const onFinish = async (values: any) => {
         setLoading(true); // Включение загрузчика
@@ -22,7 +22,7 @@ const Feedback = () => {
             console.error('There was an error sending the email: ', error);
             message.error('Произошла ошибка при отправке формы');
         } finally {
-            setLoading(false); // Выключение загрузчика
+            setLoading(false);
         }
     };
 

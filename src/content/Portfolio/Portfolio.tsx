@@ -28,7 +28,7 @@ const Portfolio: React.FC = () => {
                 <h1>Наши работы</h1>
                 <div className="carousel-container">
                     <div className="carousel-container__inner">
-                        <p>ЖК «Белая башня», ул. Донбасская, д. 21</p>
+                        <p>ЖК «Дом на бульваре», Верх-Исетский бульвар, д. 18А</p>
                         <Image.PreviewGroup
                             items={[
                                 Work5_1,
@@ -47,7 +47,7 @@ const Portfolio: React.FC = () => {
                         <div className="diver"/>
                     </div>
                     <div className="carousel-container__inner">
-                        <p>ЖК «Botanika Green House», ул. 8 Марта, д. 204Г</p>
+                        <p>ЖК «Белая башня», ул. Донбасская, д. 21</p>
                         <Image.PreviewGroup
                             items={[
                                 Work5_2,
@@ -65,7 +65,7 @@ const Portfolio: React.FC = () => {
                         <div className="diver"/>
                     </div>
                     <div className="carousel-container__inner">
-                        <p>ЖК «Дом на бульваре», Верх-Исетский бульвар, д. 18А</p>
+                        <p>ЖК «Botanika Green House», ул. 8 Марта, д. 204Г</p>
                         <Image.PreviewGroup
                             items={[
                                 Work10_3,
