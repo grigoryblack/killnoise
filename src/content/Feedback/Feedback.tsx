@@ -1,12 +1,23 @@
 import './index.scss';
 import Worker from "../../assets/img/worker.jpg";
-import {Form, Input} from 'antd';
+import {Form, Input, message} from 'antd';
+import axios from 'axios';
 
 const Feedback = () => {
     const [form] = Form.useForm();
 
-    const onFinish = (values: any) => {
-        console.log('Received values from form: ', values);
+    const onFinish = async (values: any) => {
+        try {
+            const response = await axios.post('http://localhost:8080/send-email', values);
+            if (response.status === 200){
+                message.success('Спасибо за обращение!')
+                form.resetFields()
+            } else {
+                message.warning('Не удалось отправить форму')
+            }
+        } catch (error) {
+            console.error('There was an error sending the email: ', error);
+        }
     };
 
     return (
