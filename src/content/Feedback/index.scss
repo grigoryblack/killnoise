@@ -2,7 +2,7 @@
 
 .contact-wrapper {
   width: 100%;
-  background-color: $secondary-color;
+  background-color:$primary;
   display: flex;
   justify-content: center;
   cursor: default;
@@ -16,7 +16,7 @@
 
     h1 {
       font-size: 3svw;
-      color: $background-color
+      color: $secondary-color;
     }
 
     .contact__container-inner {
@@ -25,20 +25,35 @@
       column-gap: 2svw;
       justify-content: space-between;
       align-items: center;
-      margin: 3svw 0;
+      margin: 2svw 0;
 
       .contact-inner__item {
         width: 100%;
-        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .form-container {
           width: 100%;
-          background-color: $primary;
+          border: 10px solid $secondary-color;
+          background-color: $background-color;
           padding: 2svw;
           border-radius: 20px;
+
+          ul{
+            list-style: none;
+            li{
+              display: flex;
+              align-items: center;
+              column-gap: 0.5svw;
+              margin-bottom: 1.2svw;
+              font-size: 1.3svw;
+
+              img{
+                width: 1.5svw;
+              }
+            }
+          }
 
           p {
             font-size: 1.2svw;
@@ -47,7 +62,7 @@
           }
 
           .form-button {
-            background-color: $secondary-color;
+            background-color: $primary;
             color: $background-color;
             margin-left: auto;
             margin-right: 0;
@@ -62,7 +77,7 @@
             margin-top: 2svw;
 
             &:hover {
-              background-color: #454545;
+              background-color: $secondary-color;
               color: $background-color;
             }
           }
@@ -70,7 +85,7 @@
 
         .worker {
           border-radius: 30% 70% 70% 30% / 30% 36% 64% 70%;
-          border: 10px solid $primary;
+          border: 10px solid $secondary-color;
           width: 37svw;
           height: auto;
         }
@@ -100,13 +115,26 @@
         .contact-inner__item {
 
           .form-container {
+            border: 7px solid $secondary-color;
+
+            ul{
+              list-style: none;
+              li{
+                font-size: 1.8svw;
+
+                img{
+                  width: 2svw;
+                }
+              }
+            }
+
             p {
               font-size: 2svw;
               margin-bottom: 2svw;
             }
 
             .form-button {
-              background-color: $secondary-color;
+              background-color: $primary;
               color: $background-color;
               margin-left: auto;
               margin-right: 0;
@@ -120,7 +148,7 @@
               font-family: 'Montserrat', sans-serif;
 
               &:hover {
-                background-color: #454545;
+                background-color: $secondary-color;
                 color: $background-color;
               }
             }
@@ -128,7 +156,7 @@
 
           .worker {
             border-radius: 30% 70% 70% 30% / 30% 36% 64% 70%;
-            border: 10px solid $primary;
+            border: 7px solid $secondary-color;
             width: 40svw;
             height: auto;
           }
@@ -153,8 +181,20 @@
         .contact-inner__item {
 
           .form-container {
+
+            ul{
+              list-style: none;
+              li{
+                font-size: 3.5svw;
+
+                img{
+                  width: 3svw;
+                }
+              }
+            }
+
             p {
-              font-size: 2svw;
+              font-size: 3svw;
               margin-bottom: 2svw;
             }
 
@@ -195,9 +235,21 @@
 
           .form-container {
             padding: 4svw;
+
+            ul{
+              list-style: none;
+              li{
+                font-size: 4.5svw;
+                column-gap: 3svw;
+                img{
+                  width: 4svw;
+                }
+              }
+            }
+
             p {
               font-size: 4svw;
-              margin-bottom: 2svw;
+              margin: 4svw 0;
             }
 
             .form-button {

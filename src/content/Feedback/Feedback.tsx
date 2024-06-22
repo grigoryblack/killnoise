@@ -3,6 +3,7 @@ import Worker from "../../assets/img/worker.jpg";
 import {Form, Input, message, Spin} from 'antd';
 import axios from 'axios';
 import { useState } from 'react';
+import Point from "../../assets/img/pont.svg";
 
 const Feedback = () => {
     const [form] = Form.useForm();
@@ -33,10 +34,14 @@ const Feedback = () => {
                 <div className="contact__container-inner">
                     <div className="contact-inner__item">
                         <div className="form-container">
+                            <ul>
+                                <li><img src={Point} alt="Point"/> Хотите вызвать замерщика?</li>
+                                <li><img src={Point} alt="Point"/> Хотите узнать стоимость?</li>
+                                <li><img src={Point} alt="Point"/> Нужна помощь в выборе решения?</li>
+                            </ul>
                             <p>
-                                Мы ценим ваше мнение и готовы помочь вам с любыми вопросами!
-                                <br/><br/>
-                                Пожалуйста, заполните форму ниже, чтобы мы могли связаться с вами как можно скорее.
+                                Чтобы получить ответы на эти и другие вопросы -
+                                <strong> Свяжитесь с нами! </strong>
                             </p>
                             <Spin spinning={loading}>
                                 <Form
