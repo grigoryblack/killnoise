@@ -5,11 +5,10 @@ import Work2_1 from '../../assets/img/examples/Work1/IMG_6806.jpg';
 import Work3_1 from '../../assets/img/examples/Work1/IMG_6829.jpg';
 import Work4_1 from '../../assets/img/examples/Work1/IMG_6900.jpg';
 import Work5_1 from '../../assets/img/examples/Work1/IMG_6939.jpg';
-import Work1_2 from '../../assets/img/examples/Work2/IMG_7528.jpg';
-import Work2_2 from '../../assets/img/examples/Work2/IMG_7564.jpg';
-import Work3_2 from '../../assets/img/examples/Work2/IMG_7577.jpg';
-import Work4_2 from '../../assets/img/examples/Work2/IMG_7589.jpg';
-import Work5_2 from '../../assets/img/examples/Work2/photo_2024-06-18_19-35-04.jpg';
+import Work1_2 from '../../assets/img/examples/Work2/IMG_7528.jpeg';
+import Work3_2 from '../../assets/img/examples/Work2/IMG_7589.jpeg';
+import Work4_2 from '../../assets/img/examples/Work2/IMG_7589.jpeg';
+import Work5_2 from '../../assets/img/examples/Work2/IMG_7626.jpeg';
 import Work1_3 from '../../assets/img/examples/Work3/IMG_7099.jpeg';
 import Work2_3 from '../../assets/img/examples/Work3/IMG_7131.jpeg';
 import Work3_3 from '../../assets/img/examples/Work3/IMG_7135.jpeg';
@@ -53,7 +52,6 @@ const Portfolio: React.FC = () => {
                             items={[
                                 Work5_2,
                                 Work1_2,
-                                Work2_2,
                                 Work3_2,
                                 Work4_2,
                                 Work5_2,
