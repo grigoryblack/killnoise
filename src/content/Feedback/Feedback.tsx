@@ -9,18 +9,18 @@ import InputMask from 'react-input-mask';
 const Feedback: React.FC = () => {
     const [form] = Form.useForm();
     const [loading, setLoading] = useState(false);
-    const [timeout, setTimeout] = useState(false);
+    const [timeout, setTimeoutState] = useState(false);
     const [countdown, setCountdown] = useState(0);
 
     useEffect(() => {
-        let timer: NodeJS.Timeout;
+        let timer: ReturnType<typeof setInterval>;
         if (timeout) {
             setCountdown(60);
             timer = setInterval(() => {
                 setCountdown(prevCountdown => {
                     if (prevCountdown <= 1) {
                         clearInterval(timer);
-                        setTimeout(false);
+                        setTimeoutState(false);
                         return 0;
                     }
                     return prevCountdown - 1;
@@ -42,7 +42,7 @@ const Feedback: React.FC = () => {
             if (response.status === 200) {
                 message.success('Спасибо за обращение!');
                 form.resetFields();
-                setTimeout(true);
+                setTimeoutState(true);
             } else {
                 message.warning('Не удалось отправить форму');
             }
@@ -53,6 +53,12 @@ const Feedback: React.FC = () => {
             setLoading(false);
         }
     };
+
+    const MaskedInput = (props: any) => (
+        <InputMask {...props}>
+            {(inputProps: any) => <Input {...inputProps} />}
+        </InputMask>
+    );
 
     return (
         <section id="contact" className="contact-wrapper">
@@ -89,9 +95,7 @@ const Feedback: React.FC = () => {
                                         name="phone"
                                         rules={[{ required: true, message: 'Пожалуйста, введите ваш номер телефона' }]}
                                     >
-                                        <InputMask mask="+7 (999) 999-99-99" disabled={loading}>
-                                            {(inputProps: any) => <Input {...inputProps} size="large" disabled={loading} />}
-                                        </InputMask>
+                                        <MaskedInput mask="+7 (999) 999-99-99" disabled={loading} />
                                     </Form.Item>
                                     <Form.Item
                                         label="Почта"
