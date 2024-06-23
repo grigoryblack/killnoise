@@ -38,7 +38,7 @@ const Feedback: React.FC = () => {
 
         setLoading(true); // Включение загрузчика
         try {
-            const response = await axios.post('https://killnoise-backend.onrender.com/send-email', values);
+            const response = await axios.post(`${import.meta.env.VITE_API_URL}/send-email`, values);
             if (response.status === 200) {
                 message.success('Спасибо за обращение!');
                 form.resetFields();
